@@ -1,1 +1,39 @@
 /*  your css code here. If applicable */
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #f0f0f0;
+  margin: 0;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 40px;
+  padding: 10px;
+  transition: all 0.3s ease;
+  background-color: white;
+}
+
+.input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  width: 0;
+  transition: width 0.3s ease;
+  font-size: 16px;
+}
+
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.search.active .input {
+  width: 200px; /* expands input */
+}
